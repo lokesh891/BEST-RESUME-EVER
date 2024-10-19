@@ -1,0 +1,6 @@
+{
+  "scripts": [
+    "<section>    <h2>CONTACT</h2>    <!-- contact info including social media -->    <p>        <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>        <a href=\"mailto:chimaladinnelokesh987@gmail.com\">chimaladinnelokesh987@gmail.com</a>    </p>    <p>        <i class=\"fab fa-linkedin\" aria-hidden=\"true\"></i>        <a href=\"https://www.linkedin.com/in/lokesh-prasanna-a49477282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app\" target=\"_blank\">LinkedIn - Lokesh Prasanna</a>    </p>    <p>        <i class=\"fab fa-github\" aria-hidden=\"true\"></i>        <a href=\"https://github.com/lokesh891\" target=\"_blank\">GitHub - lokesh891</a>    </p></section>"
+  ],
+  "styles": []
+}
