@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="fade-in">
         <h1>Ch Lokesh Prasanna</h1>
         <p>Artificial Intelligence & Data Science Student</p>
     </header>
 
     <main>
-        <article id="mainLeft">
+        <article id="mainLeft" class="fade-in">
             <section class="contact">
                 <h2>CONTACT</h2>
                 <p><i class="fa fa-phone"></i> +91 8919780890</p>
@@ -34,7 +34,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="fade-in">
                 <h2>SKILLS</h2>
                 <ul>
                     <li><strong>Languages:</strong> Java</li>
@@ -45,7 +45,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="fade-in">
                 <h2>EDUCATION</h2>
                 <ul>
                     <li><strong>B.Tech in AI & DS</strong><br>Muthayammal Engineering College, Namakkal (Autonomous) <br>Anna University, 2021–2025 <br>CGPA: 7.68</li>
@@ -55,13 +55,13 @@
             </section>
         </article>
 
-        <article id="mainRight">
+        <article id="mainRight" class="fade-in">
             <section>
                 <h2>PROFILE SUMMARY</h2>
                 <p>Motivated B.Tech student in Artificial Intelligence and Data Science with a solid foundation in Java, SQL, and Web Development. Passionate about applying technical skills to solve real-world problems and eager to contribute to a forward-thinking organization.</p>
             </section>
 
-            <section>
+            <section class="fade-in">
                 <h2>INTERNSHIP</h2>
                 <p><strong>Terv Pro – Core Java Intern</strong> | Salem, India | Aug 2024 – Sep 2024</p>
                 <ul>
@@ -70,7 +70,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="fade-in">
                 <h2>PROJECTS</h2>
                 <ul>
                     <li><strong>ATM Implementation System (Core Java)</strong><br>Developed a console-based ATM app supporting PIN generation, withdrawals, deposits, and UPI payments using OOP principles.</li>
@@ -79,7 +79,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="fade-in">
                 <h2>CERTIFICATIONS</h2>
                 <ul>
                     <li>Java Proficiency – HackerRank</li>
@@ -90,5 +90,20 @@
             </section>
         </article>
     </main>
+
+    <script>
+        // Scroll animation effect
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const appearOptions = { threshold: 0.2 };
+        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('appear');
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        fadeElements.forEach(el => appearOnScroll.observe(el));
+    </script>
 </body>
 </html>
